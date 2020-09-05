@@ -7,6 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class,args);
+        while (true){
+            try {
+            Thread.currentThread().sleep(1000);//毫秒
+            }
+            catch(Exception e){}
+            System.out.print("hello, world\n");
+        }
     }
 }
